@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "README.md",
+    ".gitignore"
+  ],
+  "commands": {
+    "Compile": "visionbox compile",
+    "Migrate": "visionbox migrate",
+    "Test contracts": "visionbox test"
+  },
+  "hooks": {
+    "post-unpack": "bash post-unpack.sh && rm post-unpack.sh && npm install"
+  }
+}
