@@ -8,7 +8,7 @@ module.exports = {
       /*
 Create a .env file (it must be gitignored) containing something like
 
-  export PRIVATE_KEY_MAINNET=4E7FECCB71207B867C495B51A9758B104B1D4422088A87F4978BE64636656243
+  export PRIVATE_KEY_MAINNET=92593192a0816a4b4364b72b0d7504ec59a24d478c89cf4826503ebb31ae103e
 
 Then, run the migration with:
 
