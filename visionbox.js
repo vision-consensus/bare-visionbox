@@ -2,7 +2,7 @@ const port = process.env.HOST_PORT || 8090
 
 module.exports = {
   networks: {
-    mainnet: {
+    vpioneer: {
       // Don't put your private key here:
       privateKey: process.env.PRIVATE_KEY_MAINNET,
       /*
@@ -17,7 +17,7 @@ Then, run the migration with:
 */
       userFeePercentage: 100,
       feeLimit: 1e8,
-      fullHost: 'https://vtest.infragrid.v.network',
+      fullHost: 'https://vpioneer.infragrid.v.network',
       network_id: '1'
     },
     development: {
@@ -31,6 +31,13 @@ Then, run the migration with:
       solc: {
         version: '0.5.10'
       }
+    }
+  },
+  // solc compiler optimize
+  solc: {
+    optimizer: {
+      enabled: false, // default: false, true: enable solc optimize
+      runs: 200
     }
   }
 }
