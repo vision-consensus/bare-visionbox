@@ -29,7 +29,9 @@ Then, run the migration with:
     },
     compilers: {
       solc: {
-        version: '0.5.10'
+        version: '0.5.10',
+        //  "paris", "london", "berlin", "istanbul", "petersburg", "constantinople", "byzantium", "spuriousDragon", "tangerineWhistle", "homestead", 
+        evmVersion: 'berlin'
       }
     }
   },
